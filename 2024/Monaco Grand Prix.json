@@ -1,0 +1,58 @@
+[
+    {
+        "Pos.":1,
+        "Team":"Red Bull",
+        "Driver":"Verstappen",
+        "Time (sec)":2.1,
+        "Lap":52,
+        "Points":25.0
+    },
+    {
+        "Pos.":2,
+        "Team":"Aston Martin",
+        "Driver":"Stroll",
+        "Time (sec)":2.37,
+        "Lap":42,
+        "Points":18.0
+    },
+    {
+        "Pos.":3,
+        "Team":"Sauber",
+        "Driver":"Zhou",
+        "Time (sec)":2.51,
+        "Lap":70,
+        "Points":15.0
+    },
+    {
+        "Pos.":4,
+        "Team":"Mercedes",
+        "Driver":"Hamilton",
+        "Time (sec)":2.55,
+        "Lap":51,
+        "Points":12.0
+    },
+    {
+        "Pos.":5,
+        "Team":"Sauber",
+        "Driver":"Bottas",
+        "Time (sec)":2.56,
+        "Lap":15,
+        "Points":10.0
+    },
+    {
+        "Pos.":6,
+        "Team":"Williams",
+        "Driver":"Sargeant",
+        "Time (sec)":2.66,
+        "Lap":57,
+        "Points":8.0
+    },
+    {
+        "Pos.":7,
+        "Team":"Aston Martin",
+        "Driver":"Stroll",
+        "Time (sec)":5.37,
+        "Lap":48,
+        "Points":null
+    }
+]
