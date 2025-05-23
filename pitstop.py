@@ -12,6 +12,26 @@ import requests
 DEFAULT_TIMEOUT = 10
 # URLs by year
 F1_URLS = {
+    2018: {
+        "EVENT_DATA_URL": "https://inmotion.dhl/api/f1-award-element-data/6664",
+        "EVENT_SPECIFIC_URL": "https://inmotion.dhl/api/f1-award-element-data/6662",
+    },
+    2019: {
+        "EVENT_DATA_URL": "https://inmotion.dhl/api/f1-award-element-data/6284",
+        "EVENT_SPECIFIC_URL": "https://inmotion.dhl/api/f1-award-element-data/6282",
+    },
+    2020: {
+        "EVENT_DATA_URL": "https://inmotion.dhl/api/f1-award-element-data/6284",
+        "EVENT_SPECIFIC_URL": "https://inmotion.dhl/api/f1-award-element-data/6282",
+    },
+    2021: {
+        "EVENT_DATA_URL": "https://inmotion.dhl/api/f1-award-element-data/6284",
+        "EVENT_SPECIFIC_URL": "https://inmotion.dhl/api/f1-award-element-data/6282",
+    },
+    2022: {
+        "EVENT_DATA_URL": "https://inmotion.dhl/api/f1-award-element-data/6284",
+        "EVENT_SPECIFIC_URL": "https://inmotion.dhl/api/f1-award-element-data/6282",
+    },
     2023: {
         "EVENT_DATA_URL": "https://inmotion.dhl/api/f1-award-element-data/6284",
         "EVENT_SPECIFIC_URL": "https://inmotion.dhl/api/f1-award-element-data/6282",
@@ -107,6 +127,29 @@ F1_RACES = {
         "AUSTRALIAN": "Australian Grand Prix",
         "SAUDI ARABIAN": "Saudi Arabian Grand Prix",
         "BAHRAIN": "Bahrain Grand Prix",
+    },
+    2018: {
+        "AUSTRALIAN": "Australian Grand Prix",
+        "BAHRAIN": "Bahrain Grand Prix",
+        "CHINESE": "Chinese Grand Prix",
+        "AZERBAIJAN": "Azerbaijan Grand Prix",
+        "ESPAÑA": "Spanish Grand Prix",
+        "MONACO": "Monaco Grand Prix",
+        "CANADA": "Canadian Grand Prix",
+        "FRENCH": "French Grand Prix",
+        "ÖSTERREICH": "Austrian Grand Prix",
+        "BRITISH": "British Grand Prix",
+        "DEUTSCHLAND": "German Grand Prix",
+        "NAGYDÍJ": "Hungarian Grand Prix",
+        "BELGIAN": "Belgian Grand Prix",
+        "ITALIA": "Italian Grand Prix",
+        "SINGAPORE": "Singapore Grand Prix",
+        "RUSSIAN": "Russian Grand Prix",
+        "JAPANESE": "Japanese Grand Prix",
+        "UNITED STATES": "United States Grand Prix",
+        "MÉXICO": "Mexican Grand Prix",
+        "BRASIL": "Brazilian Grand Prix",
+        "ABU DHABI": "Abu Dhabi Grand Prix",
     },
 }
 
@@ -511,4 +554,4 @@ def main(year: int = 2025):
 
 
 if __name__ == "__main__":
-    main(2025)
+    main(2018)

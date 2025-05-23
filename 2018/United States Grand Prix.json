@@ -1,0 +1,202 @@
+[
+    {
+        "Pos.":1,
+        "Team":"Mercedes",
+        "Driver":"Bottas",
+        "Time (sec)":2.28,
+        "Lap":null,
+        "Points":25.0
+    },
+    {
+        "Pos.":2,
+        "Team":"Williams",
+        "Driver":"Sirotkin",
+        "Time (sec)":2.32,
+        "Lap":null,
+        "Points":18.0
+    },
+    {
+        "Pos.":3,
+        "Team":"Ferrari",
+        "Driver":"R\u00e4ikk\u00f6nen",
+        "Time (sec)":2.33,
+        "Lap":null,
+        "Points":15.0
+    },
+    {
+        "Pos.":4,
+        "Team":"Red Bull",
+        "Driver":"Verstappen",
+        "Time (sec)":2.38,
+        "Lap":null,
+        "Points":12.0
+    },
+    {
+        "Pos.":5,
+        "Team":"Mercedes",
+        "Driver":"Hamilton",
+        "Time (sec)":2.5,
+        "Lap":null,
+        "Points":10.0
+    },
+    {
+        "Pos.":6,
+        "Team":"Haas",
+        "Driver":"Magnussen",
+        "Time (sec)":2.5,
+        "Lap":null,
+        "Points":8.0
+    },
+    {
+        "Pos.":7,
+        "Team":"Toro Rosso",
+        "Driver":"Hartley",
+        "Time (sec)":2.53,
+        "Lap":null,
+        "Points":6.0
+    },
+    {
+        "Pos.":8,
+        "Team":"Williams",
+        "Driver":"Sirotkin",
+        "Time (sec)":2.54,
+        "Lap":null,
+        "Points":null
+    },
+    {
+        "Pos.":9,
+        "Team":"Sauber",
+        "Driver":"Ericsson",
+        "Time (sec)":2.67,
+        "Lap":null,
+        "Points":4.0
+    },
+    {
+        "Pos.":10,
+        "Team":"Toro Rosso",
+        "Driver":"Gasly",
+        "Time (sec)":2.69,
+        "Lap":null,
+        "Points":2.0
+    },
+    {
+        "Pos.":11,
+        "Team":"Toro Rosso",
+        "Driver":"Gasly",
+        "Time (sec)":2.73,
+        "Lap":null,
+        "Points":null
+    },
+    {
+        "Pos.":12,
+        "Team":"McLaren",
+        "Driver":"Vandoorne",
+        "Time (sec)":2.77,
+        "Lap":null,
+        "Points":1.0
+    },
+    {
+        "Pos.":13,
+        "Team":"Mercedes",
+        "Driver":"Hamilton",
+        "Time (sec)":2.78,
+        "Lap":null,
+        "Points":null
+    },
+    {
+        "Pos.":14,
+        "Team":"McLaren",
+        "Driver":"Vandoorne",
+        "Time (sec)":3.1,
+        "Lap":null,
+        "Points":null
+    },
+    {
+        "Pos.":15,
+        "Team":"Ferrari",
+        "Driver":"Vettel",
+        "Time (sec)":3.2,
+        "Lap":null,
+        "Points":null
+    },
+    {
+        "Pos.":16,
+        "Team":"Force India",
+        "Driver":"Ocon",
+        "Time (sec)":3.27,
+        "Lap":null,
+        "Points":null
+    },
+    {
+        "Pos.":17,
+        "Team":"Williams",
+        "Driver":"Stroll",
+        "Time (sec)":3.34,
+        "Lap":null,
+        "Points":null
+    },
+    {
+        "Pos.":18,
+        "Team":"Renault",
+        "Driver":"H\u00fclkenberg",
+        "Time (sec)":3.5,
+        "Lap":null,
+        "Points":null
+    },
+    {
+        "Pos.":19,
+        "Team":"Force India",
+        "Driver":"Perez",
+        "Time (sec)":4.33,
+        "Lap":null,
+        "Points":null
+    },
+    {
+        "Pos.":20,
+        "Team":"Haas",
+        "Driver":"Grosjean",
+        "Time (sec)":5.99,
+        "Lap":null,
+        "Points":null
+    },
+    {
+        "Pos.":21,
+        "Team":"Renault",
+        "Driver":"Sainz",
+        "Time (sec)":8.06,
+        "Lap":null,
+        "Points":null
+    },
+    {
+        "Pos.":22,
+        "Team":"Haas",
+        "Driver":"Grosjean",
+        "Time (sec)":12.44,
+        "Lap":null,
+        "Points":null
+    },
+    {
+        "Pos.":23,
+        "Team":"Sauber",
+        "Driver":"Leclerc",
+        "Time (sec)":13.08,
+        "Lap":null,
+        "Points":null
+    },
+    {
+        "Pos.":24,
+        "Team":"Williams",
+        "Driver":"Stroll",
+        "Time (sec)":19.39,
+        "Lap":null,
+        "Points":null
+    },
+    {
+        "Pos.":25,
+        "Team":"McLaren",
+        "Driver":"Alonso",
+        "Time (sec)":31.52,
+        "Lap":null,
+        "Points":null
+    }
+]
