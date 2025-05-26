@@ -48,7 +48,7 @@ F1_URLS = {
 DEFAULT_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
 }
-DELAY_BETWEEN_REQUESTS = 0.5  # seconds
+DELAY_BETWEEN_REQUESTS = 0  # seconds
 
 # F1 race names by year
 F1_RACES = {
@@ -162,39 +162,7 @@ F1_RACES = {
         "Qatar": "Qatar Grand Prix",
         "Arabian": "Saudi Arabian Grand Prix",
     },
-    2021: {
-        "Steiermark": "Styrian Grand Prix",
-        "BAHRAIN": "Bahrain Grand Prix",
-        "Anniversary": "70th Anniversary Grand Prix",
-        "AZERBAIJAN": "Azerbaijan Grand Prix",
-        "ESPAÑA": "Spanish Grand Prix",
-        "MONACO": "Monaco Grand Prix",
-        "CANADA": "Canadian Grand Prix",
-        "Toscana": "Tuscan Grand Prix",
-        "ÖSTERREICH": "Austrian Grand Prix",
-        "BRITISH": "British Grand Prix",
-        "DEUTSCHLAND": "German Grand Prix",
-        "NAGYDÍJ": "Hungarian Grand Prix",
-        "BELGIAN": "Belgian Grand Prix",
-        "ITALIA": "Italian Grand Prix",
-        "SINGAPORE": "Singapore Grand Prix",
-        "RUSSIAN": "Russian Grand Prix",
-        "JAPANESE": "Japanese Grand Prix",
-        "UNITED STATES": "United States Grand Prix",
-        "MÉXICO": "Mexican Grand Prix",
-        "Paulo": "São Paulo Grand Prix",
-        "ABU DHABI": "Abu Dhabi Grand Prix",
-        "Eifel": "Eifel Grand Prix",
-        "Portuguese": "Portuguese Grand Prix",
-        "Romagna": "Emilia Romagna Grand Prix",
-        "Turkish": "Turkish Grand Prix",
-        "Sakhir": "Sakhir Grand Prix",
-        "France": "French Grand Prix",
-        "Dutch": "Dutch Grand Prix",
-        "Qatar": "Qatar Grand Prix",
-        "Arabian": "Saudi Arabian Grand Prix",
-    },
-    # 2020: {
+    # 2021: {
     #     "Steiermark": "Styrian Grand Prix",
     #     "BAHRAIN": "Bahrain Grand Prix",
     #     "Anniversary": "70th Anniversary Grand Prix",
@@ -214,14 +182,42 @@ F1_RACES = {
     #     "JAPANESE": "Japanese Grand Prix",
     #     "UNITED STATES": "United States Grand Prix",
     #     "MÉXICO": "Mexican Grand Prix",
-    #     "BRASIL": "Brazilian Grand Prix",
+    #     "Paulo": "São Paulo Grand Prix",
     #     "ABU DHABI": "Abu Dhabi Grand Prix",
-    #     "Eifel" : "Eifel Grand Prix",
+    #     "Eifel": "Eifel Grand Prix",
     #     "Portuguese": "Portuguese Grand Prix",
     #     "Romagna": "Emilia Romagna Grand Prix",
     #     "Turkish": "Turkish Grand Prix",
     #     "Sakhir": "Sakhir Grand Prix",
+    #     "France": "French Grand Prix",
+    #     "Dutch": "Dutch Grand Prix",
+    #     "Qatar": "Qatar Grand Prix",
+    #     "Arabian": "Saudi Arabian Grand Prix",
     # },
+    2021: {
+        "ABU DHABI": "Abu Dhabi Grand Prix",
+        "ÖSTERREICH": "Austrian Grand Prix",  # From "Preis Von Österreich"
+        "AZERBAIJAN": "Azerbaijan Grand Prix",
+        "BAHRAIN": "Bahrain Grand Prix",
+        "BELGIAN": "Belgian Grand Prix",
+        "BRITISH": "British Grand Prix",
+        "DUTCH": "Dutch Grand Prix",
+        "EMILIA ROMAGNA": "Emilia Romagna Grand Prix",  # From "dell’Emilia Romagna"
+        "FRANCE": "French Grand Prix",
+        "NAGYDÍJ": "Hungarian Grand Prix",  # From "Magyar Nagydíj"
+        "ITALIA": "Italian Grand Prix",  # From "D’italia"
+        "MÉXICO": "Mexico City Grand Prix",  # From "Ciudad De México"
+        "MONACO": "Monaco Grand Prix",
+        "PORTUGUESE": "Portuguese Grand Prix",
+        "QATAR": "Qatar Grand Prix",
+        "RUSSIAN": "Russian Grand Prix",
+        "SAUDI ARABIAN": "Saudi Arabian Grand Prix",
+        "ESPAÑA": "Spanish Grand Prix",
+        "STEIERMARK": "Styrian Grand Prix",  # From "Der Steiermark"
+        "SÃO PAULO": "São Paulo Grand Prix",
+        "TURKISH": "Turkish Grand Prix",
+        "UNITED STATES": "United States Grand Prix",
+    },
     2020: {
         "ÖSTERREICH": "Austrian Grand Prix",
         "STEIERMARK": "Styrian Grand Prix",
@@ -690,4 +686,4 @@ def main(year: int = 2025):
 
 
 if __name__ == "__main__":
-    main(2020)
+    main(2021)
