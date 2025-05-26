@@ -128,41 +128,9 @@ F1_RACES = {
         "SAUDI ARABIAN": "Saudi Arabian Grand Prix",
         "BAHRAIN": "Bahrain Grand Prix",
     },
-    2022: {
-        "AUSTRALIAN": "Australian Grand Prix",
-        "MIAMI": "Miami Grand Prix",
-        "Steiermark": "Styrian Grand Prix",
-        "BAHRAIN": "Bahrain Grand Prix",
-        "Anniversary": "70th Anniversary Grand Prix",
-        "AZERBAIJAN": "Azerbaijan Grand Prix",
-        "ESPAÑA": "Spanish Grand Prix",
-        "MONACO": "Monaco Grand Prix",
-        "CANADA": "Canadian Grand Prix",
-        "Toscana": "Tuscan Grand Prix",
-        "ÖSTERREICH": "Austrian Grand Prix",
-        "BRITISH": "British Grand Prix",
-        "DEUTSCHLAND": "German Grand Prix",
-        "NAGYDÍJ": "Hungarian Grand Prix",
-        "BELGIAN": "Belgian Grand Prix",
-        "ITALIA": "Italian Grand Prix",
-        "SINGAPORE": "Singapore Grand Prix",
-        "RUSSIAN": "Russian Grand Prix",
-        "JAPANESE": "Japanese Grand Prix",
-        "UNITED STATES": "United States Grand Prix",
-        "MÉXICO": "Mexican Grand Prix",
-        "Paulo": "São Paulo Grand Prix",
-        "ABU DHABI": "Abu Dhabi Grand Prix",
-        "Eifel": "Eifel Grand Prix",
-        "Portuguese": "Portuguese Grand Prix",
-        "Romagna": "Emilia Romagna Grand Prix",
-        "Turkish": "Turkish Grand Prix",
-        "Sakhir": "Sakhir Grand Prix",
-        "France": "French Grand Prix",
-        "Dutch": "Dutch Grand Prix",
-        "Qatar": "Qatar Grand Prix",
-        "Arabian": "Saudi Arabian Grand Prix",
-    },
-    # 2021: {
+    # 2022: {
+    #     "AUSTRALIAN": "Australian Grand Prix",
+    #     "MIAMI": "Miami Grand Prix",
     #     "Steiermark": "Styrian Grand Prix",
     #     "BAHRAIN": "Bahrain Grand Prix",
     #     "Anniversary": "70th Anniversary Grand Prix",
@@ -194,6 +162,30 @@ F1_RACES = {
     #     "Qatar": "Qatar Grand Prix",
     #     "Arabian": "Saudi Arabian Grand Prix",
     # },
+    2022: {
+        "BAHRAIN": "Bahrain Grand Prix",  # From "Formula 1 Gulf Air Bahrain Grand Prix 2022"
+        "SAUDI ARABIAN": "Saudi Arabian Grand Prix",  # From "Formula 1 stc Saudi Arabian Grand Prix 2022"
+        "AUSTRALIAN": "Australian Grand Prix",  # From "Formula 1 Heineken Australian Grand Prix 2022"
+        "EMILIA ROMAGNA": "Emilia Romagna Grand Prix",  # From "Formula 1 Rolex Gran Premio del Made in Italy E dell’Emilia Romagna 2022"
+        "MIAMI": "Miami Grand Prix",  # From "Formula 1 Crypto.com Miami Grand Prix 2022"
+        "ESPAÑA": "Spanish Grand Prix",  # From "Formula 1 Pirelli Gran Premio De España 2022"
+        "MONACO": "Monaco Grand Prix",  # From "Formula 1 Grand Prix De Monaco 2022"
+        "AZERBAIJAN": "Azerbaijan Grand Prix",  # From "Formula 1 Azerbaijan Grand Prix 2022"
+        "CANADA": "Canadian Grand Prix",  # From "Formula 1 AWS Grand Prix Du Canada 2022"
+        "BRITISH": "British Grand Prix",  # From "Formula 1 Lenovo British Grand Prix 2022"
+        "ÖSTERREICH": "Austrian Grand Prix",  # From "Formula 1 Rolex Grosser Preis von Österreich 2022"
+        "FRANCE": "French Grand Prix",  # From "Formula 1 Lenovo Grand Prix De France 2022"
+        "NAGYDÍJ": "Hungarian Grand Prix",  # From "Formula 1 Aramco Magyar Nagydíj 2022"
+        "BELGIAN": "Belgian Grand Prix",  # From "Formula 1 Rolex Belgian Grand Prix 2022"
+        "DUTCH": "Dutch Grand Prix",  # From "Formula 1 Heineken Dutch Grand Prix 2022"
+        "ITALIA": "Italian Grand Prix",  # From "Formula 1 Pirelli Gran Premio D’italia 2022"
+        "SINGAPORE": "Singapore Grand Prix",  # From "Formula 1 Singapore Airlines Singapore Grand Prix 2022"
+        "JAPANESE": "Japanese Grand Prix",  # From "Formula 1 Honda Japanese Grand Prix 2022"
+        "UNITED STATES": "United States Grand Prix",  # From "Formula 1 Aramco United States Grand Prix 2022"
+        "MÉXICO": "Mexico City Grand Prix",  # From "Formula 1 Gran Premio De La Ciudad De México 2022"
+        "SÃO PAULO": "São Paulo Grand Prix",  # From "Formula 1 Heineken Grande Prêemio De São Paulo 2022"
+        "ABU DHABI": "Abu Dhabi Grand Prix",  # From "Formula 1 Etihad Airways Abu Dhabi Grand Prix 2022"
+    },
     2021: {
         "ABU DHABI": "Abu Dhabi Grand Prix",
         "ÖSTERREICH": "Austrian Grand Prix",  # From "Preis Von Österreich"
@@ -686,4 +678,4 @@ def main(year: int = 2025):
 
 
 if __name__ == "__main__":
-    main(2021)
+    main(2022)
