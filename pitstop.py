@@ -9,6 +9,7 @@ import pandas as pd
 import requests
 
 # Configuration constants
+#  https://aistudio.google.com/prompts/1p-i2TSn-3uPdbqqMzZ9sFfZfih_iUw4e - for F!_RACES conversion
 DEFAULT_TIMEOUT = 10
 # URLs by year
 F1_URLS = {
@@ -53,115 +54,81 @@ DELAY_BETWEEN_REQUESTS = 0  # seconds
 # F1 race names by year
 F1_RACES = {
     2025: {
-        "AUSTRALIAN": "Australian Grand Prix",
-        "CHINESE": "Chinese Grand Prix",
-        "JAPANESE": "Japanese Grand Prix",
-        "BAHRAIN": "Bahrain Grand Prix",
-        "SAUDI ARABIAN": "Saudi Arabian Grand Prix",
-        "MIAMI": "Miami Grand Prix",
-        "EMILIA-ROMAGNA": "Emilia Romagna Grand Prix",
-        "MONACO": "Monaco Grand Prix",
-        "ESPAÑA": "Spanish Grand Prix",
-        "CANADA": "Canadian Grand Prix",
-        "AUSTRIAN": "Austrian Grand Prix",
-        "BRITISH": "British Grand Prix",
-        "BELGIAN": "Belgian Grand Prix",
-        "HUNGARIAN": "Hungarian Grand Prix",
-        "DUTCH": "Dutch Grand Prix",
-        "ITALIA": "Italian Grand Prix",
-        "AZERBAIJAN": "Azerbaijan Grand Prix",
-        "SINGAPORE": "Singapore Grand Prix",
-        "UNITED STATES": "United States Grand Prix",
-        "MÉXICO": "Mexico City Grand Prix",
-        "SÃO PAULO": "São Paulo Grand Prix",
-        "LAS VEGAS": "Las Vegas Grand Prix",
-        "QATAR": "Qatar Grand Prix",
-        "ABU DHABI": "Abu Dhabi Grand Prix",
+        "AUSTRALIAN": "Australian Grand Prix",  # From "FORMULA 1 LOUIS VUITTON AUSTRALIAN GRAND PRIX 2025"
+        "CHINESE": "Chinese Grand Prix",  # From "FORMULA 1 HEINEKEN CHINESE GRAND PRIX 2025"
+        "JAPANESE": "Japanese Grand Prix",  # From "FORMULA 1 LENOVO JAPANESE GRAND PRIX 2025"
+        "BAHRAIN": "Bahrain Grand Prix",  # From "FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2025"
+        "SAUDI ARABIAN": "Saudi Arabian Grand Prix",  # From "FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2025"
+        "MIAMI": "Miami Grand Prix",  # From "FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2025"
+        "EMILIA-ROMAGNA": "Emilia Romagna Grand Prix",  # From "FORMULA 1 AWS GRAN PREMIO DEL MADE IN ITALY E DELL'EMILIA-ROMAGNA 2025"
+        "MONACO": "Monaco Grand Prix",  # From "FORMULA 1 TAG HEUER GRAND PRIX DE MONACO 2025"
+        "ESPAÑA": "Spanish Grand Prix",  # From "FORMULA 1 ARAMCO GRAN PREMIO DE ESPAÑA 2025"
+        "CANADA": "Canadian Grand Prix",  # From "FORMULA 1 PIRELLI GRAND PRIX DU CANADA 2025"
+        "AUSTRIAN": "Austrian Grand Prix",  # From "FORMULA 1 MSC CRUISES AUSTRIAN GRAND PRIX 2025"
+        "BRITISH": "British Grand Prix",  # From "FORMULA 1 QATAR AIRWAYS BRITISH GRAND PRIX 2025"
+        "BELGIAN": "Belgian Grand Prix",  # From "FORMULA 1 MOËT & CHANDON BELGIAN GRAND PRIX 2025"
+        "HUNGARIAN": "Hungarian Grand Prix",  # From "FORMULA 1 LENOVO HUNGARIAN GRAND PRIX 2025"
+        "DUTCH": "Dutch Grand Prix",  # From "FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2025"
+        "ITALIA": "Italian Grand Prix",  # From "FORMULA 1 PIRELLI GRAN PREMIO D’ITALIA 2025"
+        "AZERBAIJAN": "Azerbaijan Grand Prix",  # From "FORMULA 1 QATAR AIRWAYS AZERBAIJAN GRAND PRIX 2025"
+        "SINGAPORE": "Singapore Grand Prix",  # From "FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2025"
+        "UNITED STATES": "United States Grand Prix",  # From "FORMULA 1 MSC CRUISES UNITED STATES GRAND PRIX 2025"
+        "MÉXICO": "Mexico City Grand Prix",  # From "FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2025"
+        "SÃO PAULO": "São Paulo Grand Prix",  # From "FORMULA 1 MSC CRUISES GRANDE PRÊMIO DE SÃO PAULO 2025"
+        "LAS VEGAS": "Las Vegas Grand Prix",  # From "FORMULA 1 HEINEKEN LAS VEGAS GRAND PRIX 2025"
+        "QATAR": "Qatar Grand Prix",  # From "FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2025"
+        "ABU DHABI": "Abu Dhabi Grand Prix",  # From "FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2025"
     },
     2024: {
-        "AUSTRALIAN": "Australian Grand Prix",
-        "CHINESE": "Chinese Grand Prix",
-        "JAPANESE": "Japanese Grand Prix",
-        "BAHRAIN": "Bahrain Grand Prix",
-        "SAUDI ARABIAN": "Saudi Arabian Grand Prix",
-        "MIAMI": "Miami Grand Prix",
-        "EMILIA-ROMAGNA": "Emilia Romagna Grand Prix",
-        "MONACO": "Monaco Grand Prix",
-        "ESPAÑA": "Spanish Grand Prix",
-        "CANADA": "Canadian Grand Prix",
-        "AUSTRIAN": "Austrian Grand Prix",
-        "BRITISH": "British Grand Prix",
-        "BELGIAN": "Belgian Grand Prix",
-        "HUNGARIAN": "Hungarian Grand Prix",
-        "DUTCH": "Dutch Grand Prix",
-        "ITALIA": "Italian Grand Prix",
-        "AZERBAIJAN": "Azerbaijan Grand Prix",
-        "SINGAPORE": "Singapore Grand Prix",
-        "UNITED STATES": "United States Grand Prix",
-        "MEXICO": "Mexico City Grand Prix",
-        "SÃO PAOLO": "São Paulo Grand Prix",
-        "LAS VEGAS": "Las Vegas Grand Prix",
-        "QATAR": "Qatar Grand Prix",
-        "ABU DHABI": "Abu Dhabi Grand Prix",
+        "BAHRAIN": "Bahrain Grand Prix",  # From "Formula 1 Gulf Air Bahrain Grand Prix 2024"
+        "SAUDI ARABIAN": "Saudi Arabian Grand Prix",  # From "Formula 1 stc Saudi Arabian Grand Prix 2024"
+        "AUSTRALIAN": "Australian Grand Prix",  # From "Formula 1 Rolex Australian Grand Prix 2024"
+        "JAPANESE": "Japanese Grand Prix",  # From "Formula 1 MSC Cruises Japanese Grand Prix 2024"
+        "CHINESE": "Chinese Grand Prix",  # From "Formula 1 Lenovo Chinese Grand Prix 2024"
+        "MIAMI": "Miami Grand Prix",  # From "Formula 1 Crypto.com Miami Grand Prix 2024"
+        "EMILIA-ROMAGNA": "Emilia Romagna Grand Prix",  # From "Formula 1 MSC Cruises Gran Premio dell'Emilia-Romagna 2024"
+        "MONACO": "Monaco Grand Prix",  # From "Formula 1 Grand Prix de Monaco 2024"
+        "CANADA": "Canadian Grand Prix",  # From "Formula 1 AWS Grand Prix du Canada 2024"
+        "ESPAÑA": "Spanish Grand Prix",  # From "Formula 1 Aramco Grand Premio de España" (Note: API title ends abruptly, using "ESPAÑA")
+        "AUSTRIAN": "Austrian Grand Prix",  # From "Formula 1 Qatar Airways Austrian Grand Prix 2024"
+        "BRITISH": "British Grand Prix",  # From "Formula 1 Qatar Airways British Grand Prix 2024"
+        "HUNGARIAN": "Hungarian Grand Prix",  # From "Formula 1 Hungarian Grand Prix 2024"
+        "BELGIAN": "Belgian Grand Prix",  # From "Formula 1 Rolex Belgian Grand Prix 2024"
+        "DUTCH": "Dutch Grand Prix",  # From "Formula 1 Heineken Dutch Grand Prix 2024"
+        "ITALIA": "Italian Grand Prix",  # From "Formula 1 Pirelli Gran Premio d'Italia 2024"
+        "AZERBAIJAN": "Azerbaijan Grand Prix",  # From "Formula 1 Qatar Airways Azerbaijan Grand Prix 2024"
+        "SINGAPORE": "Singapore Grand Prix",  # From "Formula 1 Singapore Airlines Singapore Grand Prix 2024"
+        "UNITED STATES": "United States Grand Prix",  # From "Formula 1 Pirelli United States Grand Prix 2024"
+        "MEXICO": "Mexico City Grand Prix",  # From "Formula 1 Grand Premio de la Ciudad de Mexico 2024" (Using "MEXICO" from "Ciudad de Mexico")
+        "SÃO PAOLO": "São Paulo Grand Prix",  # From "Formula 1 Lenovo Grande Prêmio de São Paolo 2024" (Using "SÃO PAOLO" as per API)
+        "LAS VEGAS": "Las Vegas Grand Prix",  # From "Formula 1 Heineken Silver Las Vegas Grand Prix 2024"
+        "QATAR": "Qatar Grand Prix",  # From "Formula 1 Qatar Airways Qatar Grand Prix 2024"
+        "ABU DHABI": "Abu Dhabi Grand Prix",  # From "Formula 1 Etihad Airways Abu Dhabi Grand Prix 2024"
     },
     2023: {
-        "ABU DHABI": "Abu Dhabi Grand Prix",
-        "LAS VEGAS": "Las Vegas Grand Prix",
-        "SÃO PAULO": "São Paulo Grand Prix",
-        "MÉXICO": "Mexico City Grand Prix",
-        "UNITED STATES": "United States Grand Prix",
-        "QATAR": "Qatar Grand Prix",
-        "JAPANESE": "Japanese Grand Prix",
-        "SINGAPORE": "Singapore Grand Prix",
-        "ITALIA": "Italian Grand Prix",
-        "DUTCH": "Dutch Grand Prix",
-        "BELGIAN": "Belgian Grand Prix",
-        "HUNGARIAN": "Hungarian Grand Prix",
-        "BRITISH": "British Grand Prix",
-        "ÖSTERREICH": "Austrian Grand Prix",
-        "CANADA": "Canadian Grand Prix",
-        "ESPAÑA": "Spanish Grand Prix",
-        "MONACO": "Monaco Grand Prix",
-        "MIAMI": "Miami Grand Prix",
-        "AZERBAIJAN": "Azerbaijan Grand Prix",
-        "AUSTRALIAN": "Australian Grand Prix",
-        "SAUDI ARABIAN": "Saudi Arabian Grand Prix",
-        "BAHRAIN": "Bahrain Grand Prix",
+        "BAHRAIN": "Bahrain Grand Prix",  # From "Formula 1 Gulf Air Bahrain Grand Prix 2023"
+        "SAUDI ARABIAN": "Saudi Arabian Grand Prix",  # From "Formula 1 stc Saudi Arabian Grand Prix 2023"
+        "AUSTRALIAN": "Australian Grand Prix",  # From "Formula 1 Rolex Australian Grand Prix 2023"
+        "AZERBAIJAN": "Azerbaijan Grand Prix",  # From "Formula 1 Azerbaijan Grand Prix 2023"
+        "MIAMI": "Miami Grand Prix",  # From "Formula 1 Crypto.com Miami Grand Prix 2023"
+        "MONACO": "Monaco Grand Prix",  # From "Formula 1 Grand Prix de Monaco 2023"
+        "ESPAÑA": "Spanish Grand Prix",  # From "Formula 1 Pirelli Gran Premio De España 2023"
+        "CANADA": "Canadian Grand Prix",  # From "Formula 1 Grand Prix Du Canada 2023"
+        "ÖSTERREICH": "Austrian Grand Prix",  # From "Formula 1 Grosser Preis von Österreich 2023"
+        "BRITISH": "British Grand Prix",  # From "Formula 1 Aramco British Grand Prix 2023"
+        "HUNGARIAN": "Hungarian Grand Prix",  # From "Formula 1 Hungarian Grand Prix 2023" (API title is direct enough)
+        "BELGIAN": "Belgian Grand Prix",  # From "Formula 1 Belgian Grand Prix 2023" (API title is direct enough)
+        "DUTCH": "Dutch Grand Prix",  # From "Formula 1 Heineken Dutch Grand Prix 2023"
+        "ITALIA": "Italian Grand Prix",  # From "Formula 1 Gran Premio D’italia 2023"
+        "SINGAPORE": "Singapore Grand Prix",  # From "Formula 1 Singapore Airlines Singapore Grand Prix 2023"
+        "JAPANESE": "Japanese Grand Prix",  # From "Formula 1 Lenovo Japanese Grand Prix 2023"
+        "QATAR": "Qatar Grand Prix",  # From "Formula 1 Qatar Grand Prix 2023" (API title is direct enough)
+        "UNITED STATES": "United States Grand Prix",  # From "Formula 1 Lenovo United States Grand Prix 2023"
+        "MÉXICO": "Mexico City Grand Prix",  # From "Formula 1 Gran Premio De La Ciudad De México 2023"
+        "SÃO PAULO": "São Paulo Grand Prix",  # From "Formula 1 Rolex Grande Prêmio De São Paulo 2023"
+        "LAS VEGAS": "Las Vegas Grand Prix",  # From "Formula 1 Heineken Silver Las Vegas Grand Prix 2023"
+        "ABU DHABI": "Abu Dhabi Grand Prix",  # From "Formula 1 Etihad Airways Abu Dhabi Grand Prix 2023"
     },
-    # 2022: {
-    #     "AUSTRALIAN": "Australian Grand Prix",
-    #     "MIAMI": "Miami Grand Prix",
-    #     "Steiermark": "Styrian Grand Prix",
-    #     "BAHRAIN": "Bahrain Grand Prix",
-    #     "Anniversary": "70th Anniversary Grand Prix",
-    #     "AZERBAIJAN": "Azerbaijan Grand Prix",
-    #     "ESPAÑA": "Spanish Grand Prix",
-    #     "MONACO": "Monaco Grand Prix",
-    #     "CANADA": "Canadian Grand Prix",
-    #     "Toscana": "Tuscan Grand Prix",
-    #     "ÖSTERREICH": "Austrian Grand Prix",
-    #     "BRITISH": "British Grand Prix",
-    #     "DEUTSCHLAND": "German Grand Prix",
-    #     "NAGYDÍJ": "Hungarian Grand Prix",
-    #     "BELGIAN": "Belgian Grand Prix",
-    #     "ITALIA": "Italian Grand Prix",
-    #     "SINGAPORE": "Singapore Grand Prix",
-    #     "RUSSIAN": "Russian Grand Prix",
-    #     "JAPANESE": "Japanese Grand Prix",
-    #     "UNITED STATES": "United States Grand Prix",
-    #     "MÉXICO": "Mexican Grand Prix",
-    #     "Paulo": "São Paulo Grand Prix",
-    #     "ABU DHABI": "Abu Dhabi Grand Prix",
-    #     "Eifel": "Eifel Grand Prix",
-    #     "Portuguese": "Portuguese Grand Prix",
-    #     "Romagna": "Emilia Romagna Grand Prix",
-    #     "Turkish": "Turkish Grand Prix",
-    #     "Sakhir": "Sakhir Grand Prix",
-    #     "France": "French Grand Prix",
-    #     "Dutch": "Dutch Grand Prix",
-    #     "Qatar": "Qatar Grand Prix",
-    #     "Arabian": "Saudi Arabian Grand Prix",
-    # },
     2022: {
         "BAHRAIN": "Bahrain Grand Prix",  # From "Formula 1 Gulf Air Bahrain Grand Prix 2022"
         "SAUDI ARABIAN": "Saudi Arabian Grand Prix",  # From "Formula 1 stc Saudi Arabian Grand Prix 2022"
@@ -230,50 +197,50 @@ F1_RACES = {
         "ABU DHABI": "Abu Dhabi Grand Prix",
     },
     2019: {
-        "AUSTRALIAN": "Australian Grand Prix",
-        "BAHRAIN": "Bahrain Grand Prix",
-        "CHINESE": "Chinese Grand Prix",
-        "AZERBAIJAN": "Azerbaijan Grand Prix",
-        "ESPAÑA": "Spanish Grand Prix",
-        "MONACO": "Monaco Grand Prix",
-        "CANADA": "Canadian Grand Prix",
-        "France": "French Grand Prix",
-        "ÖSTERREICH": "Austrian Grand Prix",
-        "BRITISH": "British Grand Prix",
-        "DEUTSCHLAND": "German Grand Prix",
-        "NAGYDÍJ": "Hungarian Grand Prix",
-        "BELGIAN": "Belgian Grand Prix",
-        "ITALIA": "Italian Grand Prix",
-        "SINGAPORE": "Singapore Grand Prix",
-        "RUSSIAN": "Russian Grand Prix",
-        "JAPANESE": "Japanese Grand Prix",
-        "UNITED STATES": "United States Grand Prix",
-        "MÉXICO": "Mexican Grand Prix",
-        "BRASIL": "Brazilian Grand Prix",
-        "ABU DHABI": "Abu Dhabi Grand Prix",
+        "AUSTRALIAN": "Australian Grand Prix",  # From "Formula 1 Rolex Australian Grand Prix"
+        "BAHRAIN": "Bahrain Grand Prix",  # From "Formula 1 Gulf Air Bahrain Grand Prix"
+        "CHINESE": "Chinese Grand Prix",  # From "Formula 1 Heineken Chinese Grand Prix"
+        "AZERBAIJAN": "Azerbaijan Grand Prix",  # From "Formula 1 Socar Azerbaijan Grand Prix"
+        "ESPAÑA": "Spanish Grand Prix",  # From "Formula 1 Emirates Gran Premio de España"
+        "MONACO": "Monaco Grand Prix",  # From "Formula 1 Grand Prix de Monaco"
+        "CANADA": "Canadian Grand Prix",  # From "Formula 1 Pirelli Grand Prix du Canada"
+        "FRANCE": "French Grand Prix",  # From "Formula 1 Grand Prix de France"
+        "ÖSTERREICH": "Austrian Grand Prix",  # From "Formula 1 myWorld Grosser Preis von Österreich"
+        "BRITISH": "British Grand Prix",  # From "Formula 1 Rolex British Grand Prix"
+        "DEUTSCHLAND": "German Grand Prix",  # From "Formula 1 Mercedes-Benz Grosser Preis von Deutschland"
+        "NAGYDÍJ": "Hungarian Grand Prix",  # From "Formula 1 Magyar Nagydíj"
+        "BELGIAN": "Belgian Grand Prix",  # From "Formula 1 Johnnie Walker Belgian Grand Prix"
+        "ITALIA": "Italian Grand Prix",  # From "Formula 1 Gran Premio Heineken D'Italia"
+        "SINGAPORE": "Singapore Grand Prix",  # From "Formula 1 Singapore Airlines Singapore Grand Prix"
+        "RUSSIAN": "Russian Grand Prix",  # From "Formula 1 VTB Russian Grand Prix"
+        "JAPANESE": "Japanese Grand Prix",  # From "Formula 1 Japanese Grand Prix"
+        "MÉXICO": "Mexican Grand Prix",  # From "Formula 1 Gran Premio de México 2019"
+        "UNITED STATES": "United States Grand Prix",  # From "Formula 1 United States Grand Prix"
+        "BRASIL": "Brazilian Grand Prix",  # From "Formula 1 Heineken Grande Prêmio do Brasil"
+        "ABU DHABI": "Abu Dhabi Grand Prix",  # From "Formula 1 Etihad Airways Abu Dhabi Grand Prix"
     },
     2018: {
-        "AUSTRALIAN": "Australian Grand Prix",
-        "BAHRAIN": "Bahrain Grand Prix",
-        "CHINESE": "Chinese Grand Prix",
-        "AZERBAIJAN": "Azerbaijan Grand Prix",
-        "ESPAÑA": "Spanish Grand Prix",
-        "MONACO": "Monaco Grand Prix",
-        "CANADA": "Canadian Grand Prix",
-        "France": "French Grand Prix",
-        "ÖSTERREICH": "Austrian Grand Prix",
-        "BRITISH": "British Grand Prix",
-        "DEUTSCHLAND": "German Grand Prix",
-        "NAGYDÍJ": "Hungarian Grand Prix",
-        "BELGIAN": "Belgian Grand Prix",
-        "ITALIA": "Italian Grand Prix",
-        "SINGAPORE": "Singapore Grand Prix",
-        "RUSSIAN": "Russian Grand Prix",
-        "JAPANESE": "Japanese Grand Prix",
-        "UNITED STATES": "United States Grand Prix",
-        "MÉXICO": "Mexican Grand Prix",
-        "BRASIL": "Brazilian Grand Prix",
-        "ABU DHABI": "Abu Dhabi Grand Prix",
+        "AUSTRALIAN": "Australian Grand Prix",  # From "FORMULA 1 2018 ROLEX AUSTRALIAN GRAND PRIX"
+        "BAHRAIN": "Bahrain Grand Prix",  # From "FORMULA 1 2018 GULF AIR BAHRAIN GRAND PRIX"
+        "CHINESE": "Chinese Grand Prix",  # From "FORMULA 1 2018 HEINEKEN CHINESE GRAND PRIX"
+        "AZERBAIJAN": "Azerbaijan Grand Prix",  # From "FORMULA 1 2018 AZERBAIJAN GRAND PRIX"
+        "ESPAÑA": "Spanish Grand Prix",  # From "FORMULA 1 GRAN PREMIO DE ESPAÑA EMIRATES 2018"
+        "MONACO": "Monaco Grand Prix",  # From "FORMULA 1 GRAND PRIX DE MONACO 2018"
+        "CANADA": "Canadian Grand Prix",  # From "FORMULA 1 GRAND PRIX HEINEKEN DU CANADA 2018"
+        "FRANCE": "French Grand Prix",  # From "FORMULA 1 PIRELLI GRAND PRIX DE FRANCE 2018"
+        "ÖSTERREICH": "Austrian Grand Prix",  # From "FORMULA 1 EYETIME GROSSER PREIS VON ÖSTERREICH 2018"
+        "BRITISH": "British Grand Prix",  # From "FORMULA 1 2018 ROLEX BRITISH GRAND PRIX"
+        "DEUTSCHLAND": "German Grand Prix",  # From "FORMULA 1 EMIRATES GROSSER PREIS VON DEUTSCHLAND 2018"
+        "NAGYDÍJ": "Hungarian Grand Prix",  # From "FORMULA 1 ROLEX MAGYAR NAGYDÍJ 2018"
+        "BELGIAN": "Belgian Grand Prix",  # From "FORMULA 1 2018 JOHNNIE WALKER BELGIAN GRAND PRIX"
+        "ITALIA": "Italian Grand Prix",  # From "FORMULA 1 GRAN PREMIO HEINEKEN D'ITALIA 2018"
+        "SINGAPORE": "Singapore Grand Prix",  # From "FORMULA 1 2018 SINGAPORE AIRLINES SINGAPORE GRAND PRIX"
+        "RUSSIAN": "Russian Grand Prix",  # From "FORMULA 1 2018 VTB RUSSIAN GRAND PRIX"
+        "JAPANESE": "Japanese Grand Prix",  # From "FORMULA 1 2018 HONDA JAPANESE GRAND PRIX"
+        "UNITED STATES": "United States Grand Prix",  # From "FORMULA 1 PIRELLI 2018 UNITED STATES GRAND PRIX"
+        "MÉXICO": "Mexican Grand Prix",  # From "FORMULA 1 GRAN PREMIO DE MÉXICO 2018"
+        "BRASIL": "Brazilian Grand Prix",  # From "FORMULA 1 GRANDE PRÊMIO HEINEKEN DO BRASIL 2018"
+        "ABU DHABI": "Abu Dhabi Grand Prix",  # From "FORMULA 1 2018 ETIHAD AIRWAYS ABU DHABI GRAND PRIX"
     },
 }
 
@@ -678,4 +645,4 @@ def main(year: int = 2025):
 
 
 if __name__ == "__main__":
-    main(2022)
+    main(2025)
