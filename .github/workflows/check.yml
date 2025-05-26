@@ -1,0 +1,39 @@
+name: Check F1 Data Update
+
+on:
+
+  # Schedule to run (e.g., every 30 minutes)
+  # Use https://crontab.guru to help define your cron schedule
+  schedule:
+    - cron: '0 14 1 6 *'
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  check_for_update:
+    runs-on: ubuntu-latest # Use a Linux runner
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        # This step checks out your repository's code so the workflow can access your script.
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10' # Specify your desired Python version, e.g., 3.8, 3.9, 3.10, 3.11
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+          # If you have other dependencies, list them in a requirements.txt
+          # and install using: pip install -r requirements.txt
+
+      - name: Run F1 update checker script
+        run: python check.py
+      - name: Fetch latest race pitstops data
+        run: python pitstop.py
+
+        # This command executes your Python script.
+        # The output (print statements) from your script will appear in the Action's log.
