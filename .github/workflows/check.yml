@@ -34,5 +34,20 @@ jobs:
       - name: Fetch latest race pitstops data
         run: python pitstop.py
 
-        # This command executes your Python script.
-        # The output (print statements) from your script will appear in the Action's log.
+      - name: Commit and push changes
+        run: |
+          # Fast pull strategy
+          git pull --no-rebase --no-edit origin main || true
+
+          # Add all changes
+          git add .
+
+          # Only commit if there are changes
+          if [[ "$(git status --porcelain)" != "" ]]; then
+              git commit -m "Update F1 telemetry data [skip ci]" -a
+              git push origin main
+          else
+              echo "No changes to commit"
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
