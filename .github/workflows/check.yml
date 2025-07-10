@@ -1,7 +1,6 @@
 name: Check F1 Data Update
 
 on:
-
   # Schedule to run (e.g., every 30 minutes)
   # Use https://crontab.guru to help define your cron schedule
   schedule:
@@ -11,43 +10,38 @@ on:
 
 jobs:
   check_for_update:
-    runs-on: ubuntu-latest # Use a Linux runner
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        # This step checks out your repository's code so the workflow can access your script.
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10' # Specify your desired Python version, e.g., 3.8, 3.9, 3.10, 3.11
+          python-version: '3.10'
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-
-      - name: Run F1 update checker script
-        run: python check.py
       - name: Fetch latest race pitstops data
         run: python pitstop.py
 
-      - name: Commit and push changes
+      - name: Commit & push changes if any
         run: |
-          # Fast pull strategy
-          git pull --no-rebase --no-edit origin main || true
+          # configure Git for the bot
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Add all changes
-          git add .
-
-          # Only commit if there are changes
-          if [[ "$(git status --porcelain)" != "" ]]; then
-              git commit -m "Update F1 telemetry data [skip ci]" -a
-              git push origin main
+          # only commit if there are unstaged changes
+          if [ -n "$(git status --porcelain)" ]; then
+            git add .
+            git commit -m "chore: update F1 pitstop data [ci skip]"
+            git push origin HEAD:${{ github.ref }}
           else
-              echo "No changes to commit"
+            echo "No changes detected; nothing to commit."
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
