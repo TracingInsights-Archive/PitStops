@@ -5,7 +5,7 @@
         "Driver":"Piastri",
         "Time (sec)":2.1,
         "Lap":53,
-        "Points":25.0
+        "Points":25
     },
     {
         "Pos.":2,
@@ -13,7 +13,7 @@
         "Driver":"Lawson",
         "Time (sec)":2.18,
         "Lap":32,
-        "Points":18.0
+        "Points":18
     },
     {
         "Pos.":3,
@@ -21,7 +21,7 @@
         "Driver":"Hamilton",
         "Time (sec)":2.18,
         "Lap":50,
-        "Points":15.0
+        "Points":15
     },
     {
         "Pos.":4,
@@ -29,7 +29,7 @@
         "Driver":"Hadjar",
         "Time (sec)":2.24,
         "Lap":2,
-        "Points":12.0
+        "Points":12
     },
     {
         "Pos.":5,
@@ -37,7 +37,7 @@
         "Driver":"Colapinto",
         "Time (sec)":2.24,
         "Lap":39,
-        "Points":10.0
+        "Points":10
     },
     {
         "Pos.":6,
@@ -45,7 +45,7 @@
         "Driver":"Hamilton",
         "Time (sec)":2.24,
         "Lap":26,
-        "Points":null
+        "Points":0
     },
     {
         "Pos.":7,
@@ -53,7 +53,7 @@
         "Driver":"Bortoleto",
         "Time (sec)":2.29,
         "Lap":49,
-        "Points":8.0
+        "Points":8
     },
     {
         "Pos.":8,
@@ -61,7 +61,7 @@
         "Driver":"Hulkenberg",
         "Time (sec)":2.3,
         "Lap":12,
-        "Points":6.0
+        "Points":6
     },
     {
         "Pos.":9,
@@ -69,7 +69,7 @@
         "Driver":"Hulkenberg",
         "Time (sec)":2.31,
         "Lap":42,
-        "Points":null
+        "Points":0
     },
     {
         "Pos.":10,
@@ -77,7 +77,7 @@
         "Driver":"Leclerc",
         "Time (sec)":2.32,
         "Lap":25,
-        "Points":4.0
+        "Points":4
     },
     {
         "Pos.":11,
@@ -85,7 +85,7 @@
         "Driver":"Tsunoda",
         "Time (sec)":2.35,
         "Lap":18,
-        "Points":2.0
+        "Points":2
     },
     {
         "Pos.":12,
@@ -93,7 +93,7 @@
         "Driver":"Russell",
         "Time (sec)":2.39,
         "Lap":18,
-        "Points":1.0
+        "Points":1
     },
     {
         "Pos.":13,
@@ -101,7 +101,7 @@
         "Driver":"Bortoleto",
         "Time (sec)":2.44,
         "Lap":21,
-        "Points":null
+        "Points":0
     },
     {
         "Pos.":14,
@@ -109,7 +109,7 @@
         "Driver":"Leclerc",
         "Time (sec)":2.45,
         "Lap":49,
-        "Points":null
+        "Points":0
     },
     {
         "Pos.":15,
@@ -117,7 +117,7 @@
         "Driver":"Norris",
         "Time (sec)":2.5,
         "Lap":52,
-        "Points":null
+        "Points":0
     },
     {
         "Pos.":16,
@@ -125,7 +125,7 @@
         "Driver":"Albon",
         "Time (sec)":2.53,
         "Lap":13,
-        "Points":null
+        "Points":0
     },
     {
         "Pos.":17,
@@ -133,7 +133,7 @@
         "Driver":"Stroll",
         "Time (sec)":2.55,
         "Lap":53,
-        "Points":null
+        "Points":0
     },
     {
         "Pos.":18,
@@ -141,7 +141,7 @@
         "Driver":"Hadjar",
         "Time (sec)":2.75,
         "Lap":28,
-        "Points":null
+        "Points":0
     },
     {
         "Pos.":19,
@@ -149,7 +149,7 @@
         "Driver":"Gasly",
         "Time (sec)":2.77,
         "Lap":38,
-        "Points":null
+        "Points":0
     },
     {
         "Pos.":20,
@@ -157,7 +157,7 @@
         "Driver":"Alonso",
         "Time (sec)":2.81,
         "Lap":33,
-        "Points":null
+        "Points":0
     },
     {
         "Pos.":21,
@@ -165,7 +165,7 @@
         "Driver":"Gasly",
         "Time (sec)":2.92,
         "Lap":12,
-        "Points":null
+        "Points":0
     },
     {
         "Pos.":22,
@@ -173,7 +173,7 @@
         "Driver":"Russell",
         "Time (sec)":2.93,
         "Lap":45,
-        "Points":null
+        "Points":0
     },
     {
         "Pos.":23,
@@ -181,7 +181,7 @@
         "Driver":"Bearman",
         "Time (sec)":3.0,
         "Lap":39,
-        "Points":null
+        "Points":0
     },
     {
         "Pos.":24,
@@ -189,7 +189,7 @@
         "Driver":"Ocon",
         "Time (sec)":3.09,
         "Lap":50,
-        "Points":null
+        "Points":0
     },
     {
         "Pos.":25,
@@ -197,7 +197,7 @@
         "Driver":"Norris",
         "Time (sec)":3.15,
         "Lap":20,
-        "Points":null
+        "Points":0
     },
     {
         "Pos.":26,
@@ -205,7 +205,7 @@
         "Driver":"Bearman",
         "Time (sec)":3.17,
         "Lap":11,
-        "Points":null
+        "Points":0
     },
     {
         "Pos.":27,
@@ -213,7 +213,7 @@
         "Driver":"Piastri",
         "Time (sec)":3.45,
         "Lap":24,
-        "Points":null
+        "Points":0
     },
     {
         "Pos.":28,
@@ -221,7 +221,7 @@
         "Driver":"Stroll",
         "Time (sec)":3.68,
         "Lap":26,
-        "Points":null
+        "Points":0
     },
     {
         "Pos.":29,
@@ -229,7 +229,7 @@
         "Driver":"Colapinto",
         "Time (sec)":3.95,
         "Lap":13,
-        "Points":null
+        "Points":0
     },
     {
         "Pos.":30,
@@ -237,7 +237,7 @@
         "Driver":"Ocon",
         "Time (sec)":3.98,
         "Lap":19,
-        "Points":null
+        "Points":0
     },
     {
         "Pos.":31,
@@ -245,7 +245,7 @@
         "Driver":"Tsunoda",
         "Time (sec)":10.6,
         "Lap":30,
-        "Points":null
+        "Points":0
     },
     {
         "Pos.":32,
@@ -253,6 +253,6 @@
         "Driver":"Tsunoda",
         "Time (sec)":13.68,
         "Lap":60,
-        "Points":null
+        "Points":0
     }
 ]
