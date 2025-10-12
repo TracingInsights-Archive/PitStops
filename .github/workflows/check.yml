@@ -4,7 +4,7 @@ on:
   # Schedule to run (e.g., every 30 minutes)
   # Use https://crontab.guru to help define your cron schedule
   schedule:
-    - cron: '0 20 1 6 *'
+    - cron: '30 21 19 10 *'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
