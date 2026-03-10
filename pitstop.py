@@ -45,6 +45,10 @@ F1_URLS = {
         "EVENT_DATA_URL": "https://inmotion.dhl/api/f1-award-element-data/6367",
         "EVENT_SPECIFIC_URL": "https://inmotion.dhl/api/f1-award-element-data/6365",
     },
+    2026: {
+        "EVENT_DATA_URL": "https://inmotion.dhl/api/f1-award-element-data/7375",
+        "EVENT_SPECIFIC_URL": "https://inmotion.dhl/api/f1-award-element-data/7373",
+    },
 }
 DEFAULT_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
@@ -53,6 +57,32 @@ DELAY_BETWEEN_REQUESTS = 0  # seconds
 
 # F1 race names by year
 F1_RACES = {
+    2026: {
+        "AUSTRALIAN": "Australian Grand Prix",
+        "CHINESE": "Chinese Grand Prix",
+        "JAPANESE": "Japanese Grand Prix",
+        "BAHRAIN": "Bahrain Grand Prix",
+        "SAUDI ARABIAN": "Saudi Arabian Grand Prix",
+        "MIAMI": "Miami Grand Prix",
+        "BARCELONA-CATALUNYA": "Barcelona Grand Prix",
+        "MONACO": "Monaco Grand Prix",
+        "ESPAÑA": "Spanish Grand Prix",
+        "CANADA": "Canadian Grand Prix",
+        "AUSTRIAN": "Austrian Grand Prix",
+        "BRITISH": "British Grand Prix",
+        "BELGIAN": "Belgian Grand Prix",
+        "HUNGARIAN": "Hungarian Grand Prix",
+        "DUTCH": "Dutch Grand Prix",
+        "ITALIA": "Italian Grand Prix",
+        "AZERBAIJAN": "Azerbaijan Grand Prix",
+        "SINGAPORE": "Singapore Grand Prix",
+        "UNITED STATES": "United States Grand Prix",
+        "MÉXICO": "Mexico City Grand Prix",
+        "SÃO PAULO": "São Paulo Grand Prix",
+        "LAS VEGAS": "Las Vegas Grand Prix",
+        "QATAR": "Qatar Grand Prix",
+        "ABU DHABI": "Abu Dhabi Grand Prix",
+    },
     2025: {
         "AUSTRALIAN": "Australian Grand Prix",  # From "FORMULA 1 LOUIS VUITTON AUSTRALIAN GRAND PRIX 2025"
         "CHINESE": "Chinese Grand Prix",  # From "FORMULA 1 HEINEKEN CHINESE GRAND PRIX 2025"
@@ -645,4 +675,4 @@ def main(year: int = 2025):
 
 
 if __name__ == "__main__":
-    main(2025)
+    main(2026)
