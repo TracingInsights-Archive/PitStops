@@ -1,3 +1,378 @@
 [
-
+    {
+        "Pos.":1,
+        "Team":"McLaren",
+        "Driver":"Piastri",
+        "Time (sec)":2.13,
+        "Lap":14,
+        "Points":25
+    },
+    {
+        "Pos.":2,
+        "Team":"Audi",
+        "Driver":"Bortoleto",
+        "Time (sec)":2.21,
+        "Lap":33,
+        "Points":18
+    },
+    {
+        "Pos.":3,
+        "Team":"Red Bull",
+        "Driver":"Hadjar",
+        "Time (sec)":2.25,
+        "Lap":58,
+        "Points":15
+    },
+    {
+        "Pos.":4,
+        "Team":"Mercedes",
+        "Driver":"Russell",
+        "Time (sec)":2.27,
+        "Lap":36,
+        "Points":12
+    },
+    {
+        "Pos.":5,
+        "Team":"Williams",
+        "Driver":"Albon",
+        "Time (sec)":2.28,
+        "Lap":29,
+        "Points":10
+    },
+    {
+        "Pos.":6,
+        "Team":"McLaren",
+        "Driver":"Norris",
+        "Time (sec)":2.29,
+        "Lap":13,
+        "Points":8
+    },
+    {
+        "Pos.":7,
+        "Team":"Mercedes",
+        "Driver":"Russell",
+        "Time (sec)":2.29,
+        "Lap":12,
+        "Points":0
+    },
+    {
+        "Pos.":8,
+        "Team":"Red Bull",
+        "Driver":"Verstappen",
+        "Time (sec)":2.39,
+        "Lap":12,
+        "Points":6
+    },
+    {
+        "Pos.":9,
+        "Team":"Mercedes",
+        "Driver":"Antonelli",
+        "Time (sec)":2.46,
+        "Lap":14,
+        "Points":4
+    },
+    {
+        "Pos.":10,
+        "Team":"Aston Martin",
+        "Driver":"Alonso",
+        "Time (sec)":2.5,
+        "Lap":21,
+        "Points":2
+    },
+    {
+        "Pos.":11,
+        "Team":"Racing Bulls",
+        "Driver":"Lindblad",
+        "Time (sec)":2.53,
+        "Lap":22,
+        "Points":1
+    },
+    {
+        "Pos.":12,
+        "Team":"Alpine",
+        "Driver":"Colapinto",
+        "Time (sec)":2.57,
+        "Lap":34,
+        "Points":0
+    },
+    {
+        "Pos.":13,
+        "Team":"Ferrari",
+        "Driver":"Leclerc",
+        "Time (sec)":2.58,
+        "Lap":39,
+        "Points":0
+    },
+    {
+        "Pos.":14,
+        "Team":"Red Bull",
+        "Driver":"Hadjar",
+        "Time (sec)":2.58,
+        "Lap":15,
+        "Points":0
+    },
+    {
+        "Pos.":15,
+        "Team":"Ferrari",
+        "Driver":"Hamilton",
+        "Time (sec)":2.6,
+        "Lap":11,
+        "Points":0
+    },
+    {
+        "Pos.":16,
+        "Team":"Audi",
+        "Driver":"Hulkenberg",
+        "Time (sec)":2.6,
+        "Lap":13,
+        "Points":0
+    },
+    {
+        "Pos.":17,
+        "Team":"McLaren",
+        "Driver":"Norris",
+        "Time (sec)":2.62,
+        "Lap":35,
+        "Points":0
+    },
+    {
+        "Pos.":18,
+        "Team":"Ferrari",
+        "Driver":"Leclerc",
+        "Time (sec)":2.66,
+        "Lap":16,
+        "Points":0
+    },
+    {
+        "Pos.":19,
+        "Team":"Audi",
+        "Driver":"Bortoleto",
+        "Time (sec)":2.68,
+        "Lap":15,
+        "Points":0
+    },
+    {
+        "Pos.":20,
+        "Team":"Mercedes",
+        "Driver":"Antonelli",
+        "Time (sec)":2.68,
+        "Lap":37,
+        "Points":0
+    },
+    {
+        "Pos.":21,
+        "Team":"Cadillac",
+        "Driver":"Bottas",
+        "Time (sec)":2.73,
+        "Lap":14,
+        "Points":0
+    },
+    {
+        "Pos.":22,
+        "Team":"Ferrari",
+        "Driver":"Hamilton",
+        "Time (sec)":2.73,
+        "Lap":27,
+        "Points":0
+    },
+    {
+        "Pos.":23,
+        "Team":"Red Bull",
+        "Driver":"Hadjar",
+        "Time (sec)":2.84,
+        "Lap":32,
+        "Points":0
+    },
+    {
+        "Pos.":24,
+        "Team":"Ferrari",
+        "Driver":"Hamilton",
+        "Time (sec)":2.9,
+        "Lap":41,
+        "Points":0
+    },
+    {
+        "Pos.":25,
+        "Team":"Red Bull",
+        "Driver":"Verstappen",
+        "Time (sec)":2.98,
+        "Lap":40,
+        "Points":0
+    },
+    {
+        "Pos.":26,
+        "Team":"Alpine",
+        "Driver":"Gasly",
+        "Time (sec)":3.01,
+        "Lap":14,
+        "Points":0
+    },
+    {
+        "Pos.":27,
+        "Team":"Alpine",
+        "Driver":"Colapinto",
+        "Time (sec)":3.13,
+        "Lap":12,
+        "Points":0
+    },
+    {
+        "Pos.":28,
+        "Team":"Williams",
+        "Driver":"Sainz",
+        "Time (sec)":3.14,
+        "Lap":30,
+        "Points":0
+    },
+    {
+        "Pos.":29,
+        "Team":"McLaren",
+        "Driver":"Piastri",
+        "Time (sec)":3.18,
+        "Lap":36,
+        "Points":0
+    },
+    {
+        "Pos.":30,
+        "Team":"Cadillac",
+        "Driver":"Perez",
+        "Time (sec)":3.22,
+        "Lap":39,
+        "Points":0
+    },
+    {
+        "Pos.":31,
+        "Team":"Haas",
+        "Driver":"Ocon",
+        "Time (sec)":3.25,
+        "Lap":58,
+        "Points":0
+    },
+    {
+        "Pos.":32,
+        "Team":"Williams",
+        "Driver":"Albon",
+        "Time (sec)":3.28,
+        "Lap":50,
+        "Points":0
+    },
+    {
+        "Pos.":33,
+        "Team":"Williams",
+        "Driver":"Sainz",
+        "Time (sec)":3.32,
+        "Lap":55,
+        "Points":0
+    },
+    {
+        "Pos.":34,
+        "Team":"Williams",
+        "Driver":"Sainz",
+        "Time (sec)":3.39,
+        "Lap":14,
+        "Points":0
+    },
+    {
+        "Pos.":35,
+        "Team":"Haas",
+        "Driver":"Ocon",
+        "Time (sec)":3.46,
+        "Lap":13,
+        "Points":0
+    },
+    {
+        "Pos.":36,
+        "Team":"Haas",
+        "Driver":"Bearman",
+        "Time (sec)":3.49,
+        "Lap":18,
+        "Points":0
+    },
+    {
+        "Pos.":37,
+        "Team":"Racing Bulls",
+        "Driver":"Lawson",
+        "Time (sec)":3.71,
+        "Lap":35,
+        "Points":0
+    },
+    {
+        "Pos.":38,
+        "Team":"Alpine",
+        "Driver":"Gasly",
+        "Time (sec)":3.76,
+        "Lap":40,
+        "Points":0
+    },
+    {
+        "Pos.":39,
+        "Team":"Racing Bulls",
+        "Driver":"Lindblad",
+        "Time (sec)":3.95,
+        "Lap":37,
+        "Points":0
+    },
+    {
+        "Pos.":40,
+        "Team":"Cadillac",
+        "Driver":"Perez",
+        "Time (sec)":4.05,
+        "Lap":31,
+        "Points":0
+    },
+    {
+        "Pos.":41,
+        "Team":"Cadillac",
+        "Driver":"Perez",
+        "Time (sec)":4.07,
+        "Lap":12,
+        "Points":0
+    },
+    {
+        "Pos.":42,
+        "Team":"Haas",
+        "Driver":"Bearman",
+        "Time (sec)":4.07,
+        "Lap":39,
+        "Points":0
+    },
+    {
+        "Pos.":43,
+        "Team":"Williams",
+        "Driver":"Albon",
+        "Time (sec)":4.24,
+        "Lap":13,
+        "Points":0
+    },
+    {
+        "Pos.":44,
+        "Team":"Red Bull",
+        "Driver":"Verstappen",
+        "Time (sec)":4.39,
+        "Lap":29,
+        "Points":0
+    },
+    {
+        "Pos.":45,
+        "Team":"Audi",
+        "Driver":"Bortoleto",
+        "Time (sec)":6.01,
+        "Lap":53,
+        "Points":0
+    },
+    {
+        "Pos.":46,
+        "Team":"Racing Bulls",
+        "Driver":"Lawson",
+        "Time (sec)":6.28,
+        "Lap":11,
+        "Points":0
+    },
+    {
+        "Pos.":47,
+        "Team":"Haas",
+        "Driver":"Ocon",
+        "Time (sec)":6.76,
+        "Lap":34,
+        "Points":0
+    }
 ]
