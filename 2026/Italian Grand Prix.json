@@ -1,3 +1,74 @@
 [
-
+    {
+        "Pos.":1,
+        "Team":"Audi",
+        "Driver":"Hulkenberg",
+        "Time (sec)":2.44,
+        "Lap":27,
+        "Points":25
+    },
+    {
+        "Pos.":2,
+        "Team":"Red Bull",
+        "Driver":"Verstappen",
+        "Time (sec)":2.64,
+        "Lap":28,
+        "Points":18
+    },
+    {
+        "Pos.":3,
+        "Team":"Williams",
+        "Driver":"Sainz",
+        "Time (sec)":2.65,
+        "Lap":27,
+        "Points":15
+    },
+    {
+        "Pos.":4,
+        "Team":"Mercedes",
+        "Driver":"Antonelli",
+        "Time (sec)":2.76,
+        "Lap":28,
+        "Points":12
+    },
+    {
+        "Pos.":5,
+        "Team":"Williams",
+        "Driver":"Albon",
+        "Time (sec)":4.48,
+        "Lap":46,
+        "Points":10
+    },
+    {
+        "Pos.":6,
+        "Team":"Haas",
+        "Driver":"Ocon",
+        "Time (sec)":4.79,
+        "Lap":27,
+        "Points":8
+    },
+    {
+        "Pos.":7,
+        "Team":"Cadillac",
+        "Driver":"Perez",
+        "Time (sec)":6.18,
+        "Lap":27,
+        "Points":6
+    },
+    {
+        "Pos.":8,
+        "Team":"Cadillac",
+        "Driver":"Bottas",
+        "Time (sec)":6.92,
+        "Lap":27,
+        "Points":4
+    },
+    {
+        "Pos.":9,
+        "Team":"Red Bull",
+        "Driver":"Lawson",
+        "Time (sec)":8.98,
+        "Lap":12,
+        "Points":2
+    }
 ]
